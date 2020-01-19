@@ -38,6 +38,17 @@ find name function is written in saymyname function.here find name function lexi
 can't call doodle in global , js is weird.doodle function is close in it's own function.so we can't call it from line number 37.
 
 
+#### 3.14 function scope vs block scope
+    if(5>4)
+    {
+    var x=1234;
+    }
+    cosole.log(x);
+
+
+result->1234;
+var variable can be access any line but if we use let or const linr=e number 44 we can't access them.
+
     
     
   
