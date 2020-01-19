@@ -49,6 +49,19 @@ can't call doodle in global , js is weird.doodle function is close in it's own f
 result->1234;
 var variable can be access any line but if we use let or const linr=e number 44 we can't access them.
 
+#####3.17 IIFE
+
+    var script1=(function(){
+    function a(){
+        return 5;
+    }
+    return{
+        a: a
+    }
+
+    })();
+    console.log(script1.a());
+ result->5;
     
     
   
