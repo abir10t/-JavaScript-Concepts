@@ -49,7 +49,7 @@ can't call doodle in global , js is weird.doodle function is close in it's own f
 result->1234;
 var variable can be access any line but if we use let or const linr=e number 44 we can't access them.
 
-#####3.17 IIFE
+##### 3.17 IIFE
 
     var script1=(function(){
     function a(){
@@ -64,7 +64,43 @@ var variable can be access any line but if we use let or const linr=e number 44 
  result->5;
     
     
-  
+### 3.18 this keyword
+
+2 benifits ->
+1.gives methods acess to their object
+
+    const obj={
+    name: 'billy',
+    sing(){
+        return 'lala'+this.name;
+    },
+    singagain (){
+       return this.sing+"!"
+    }
+
+    }
+    obj.singagain()
+    
+    
+ 2.ececute same code for multiple object
+    
+    function importantperson(){
+    console.log(this.name);
+    }
+    const name='do'
+
+    const obj1={
+        name:'cassy',
+        callname:importantperson
+    }
+    const obj2={
+        name:'passy',
+        callname:importantperson
+
+    }
+    console.log(obj1.callname())
+    
+  result->cassy
 
 
 
