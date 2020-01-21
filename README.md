@@ -101,6 +101,42 @@ var variable can be access any line but if we use let or const linr=e number 44 
     console.log(obj1.callname())
     
   result->cassy
+  
+  ### 3.20 call, apply bind
+  
+  
+ calls a method of an object,substituting another object for the current object
+ 
+    const wizard={
+    name='merlin',
+    health='50',
+    heal(){
+    return.this.health=100;
+    }
+    }
+    const archer={
+    name:'robin hood',
+    health:'30'
+    }
+    wizard.heal.call(archer)
+    
+ ->result 100
+ we can also give parameter.in apply it takes parametet.example is given below:
+ 
+ 
+    const wizard={
+    name='merlin',
+    health='50',
+    heal(num1,num2){
+    return.this.health=num1+num2;
+    }
+    }
+    const archer={
+    name:'robin hood',
+    health:'30'
+    }
+    wizard.heal.apply(archer,[100,30])
+    
 
 
 
