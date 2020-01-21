@@ -163,15 +163,15 @@ var variable can be access any line but if we use let or const linr=e number 44 
  
  
  ### learn from 3
- 1.execution context
- 2.lexical environment
- 3.scope chain
- 4.hoisting
- 5.function invocation
- 6.function scope vs block scope
- 7.dynamic vs lexical scope
- 8.this->call,apply,bind
- 9.IIFE
+     1.execution context
+     2.lexical environment
+     3.scope chain
+     4.hoisting
+     5.function invocation
+     6.function scope vs block scope
+     7.dynamic vs lexical scope
+     8.this->call,apply,bind
+     9.IIFE
   
   
   
