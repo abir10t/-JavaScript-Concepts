@@ -82,7 +82,7 @@ var variable can be access any line but if we use let or const linr=e number 44 
     obj.singagain()
     
     
- 2.ececute same code for multiple object
+ 2.execute same code for multiple object
     
     function importantperson(){
     console.log(this.name);
@@ -128,14 +128,43 @@ var variable can be access any line but if we use let or const linr=e number 44 
     name='merlin',
     health='50',
     heal(num1,num2){
-    return.this.health=num1+num2;
+    return this.health+=num1+num2;
+     }
     }
-    }
+    
     const archer={
     name:'robin hood',
     health:'30'
     }
     wizard.heal.apply(archer,[100,30])
+    
+ result->160
+        
+       const wizard={
+    name='merlin',
+    health='50',
+    heal(num1,num2){
+    return this.health+=num1+num2;
+     }
+    }
+    
+    const archer={
+    name:'robin hood',
+    health:'30'
+    }
+    const healarcher=wizard.heal.bind(archer,100,30)
+    hearcher();
+  bind is use for further use.
+  
+  
+ ### context vs scope
+ context is most often determine by how a function is invoked with the value of this keyword scope referes to the visibility of variable.
+  
+  
+  
+  
+    
+    
     
 
 
