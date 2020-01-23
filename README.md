@@ -176,7 +176,21 @@ var variable can be access any line but if we use let or const linr=e number 44 
   
   
   metarial :https://spin.atomicobject.com/2014/10/20/javascript-scope-closures/
-    
+  
+  
+  
+  #### section overview
+  
+      topic: 1.closures
+             2.prototype inheritance
+for understanding two topic need clear concept in
+
+     1.Higher order functions
+     2.function vs object
+     3.schema+java
+     
+lets learn this topic (: (: 
+   
     
     
 
