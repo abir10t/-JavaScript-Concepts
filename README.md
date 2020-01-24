@@ -221,10 +221,10 @@ two benifits
     
    .......JavaScript runtime engine........
    JavaScript runs within a browser and browsers do a lot more than just execute code. In fact, there are four distinct parts of the browser to consider:
-   1.JavaScript runtime engine
+   1 JavaScript runtime engine
    2 web APIs provided by the browser like the DOM, setTimeout, etc.
-   3.a callback queue for events with callbacks like onClick and onLoad
-   4.an event loop
+   3 a callback queue for events with callbacks like onClick and onLoad
+   4 an event loop
    
  
  
