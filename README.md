@@ -27,7 +27,7 @@ find name function is written in saymyname function.here find name function lexi
     }
   
  result->50;
- var ,let,const tell js variable environment this is a variable .but here height=50 go to global scope chain 'use strict' can help this for not doing this kind of weird js.use it global.
+ var ,let,const tell js variable environment this is a variable .but here height=50 go to global scope chain , 'use strict' can help this for not doing this kind of weird js.use it global.
  
  
     var heyhey=function doodle(){
@@ -220,6 +220,8 @@ two benifits
     }
     
    .......JavaScript runtime engine........
+   
+   
    JavaScript runs within a browser and browsers do a lot more than just execute code. In fact, there are four distinct parts of the browser to consider:
    
        1 JavaScript runtime engine
