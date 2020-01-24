@@ -209,7 +209,24 @@ two benifits
           console.log(i);
        }, 300);
      }
- result will be->4
+ result will be->4444
+ 
+ demonstrating that the loop and the timeout are running independently, and that by the time the first (and subsequent) setTimeout() function has run its code, the loop has already completed, leaving i set at 5.
+ WAT!!! Why isn’t the output 1 2 3 4? There’s actually a lot going on in this subtle example.
+ The short answer is that the for loop executes first, then it looks for the i value, which is 5, and then outputs four times, one for each loop iteration.Consider that even if we use a setTimeout of 0, the result is still the same.
+ 
+    for (var i = 1; i < 5; i++) {
+    setTimeout(() => console.log(i), 0)  // 5 5 5 5
+    }
+    
+   .......JavaScript runtime engine........
+   JavaScript runs within a browser and browsers do a lot more than just execute code. In fact, there are four distinct parts of the browser to consider:
+   1.JavaScript runtime engine
+   2 web APIs provided by the browser like the DOM, setTimeout, etc.
+   3.a callback queue for events with callbacks like onClick and onLoad
+   4.an event loop
+   
+ 
  
  we need to use let i=0,because var is global but let is block scope.
  
@@ -226,7 +243,7 @@ two benifits
 
      }
     
-
+result->0 1 2 3
 
 
 
