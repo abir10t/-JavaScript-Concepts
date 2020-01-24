@@ -221,11 +221,20 @@ two benifits
     
    .......JavaScript runtime engine........
    JavaScript runs within a browser and browsers do a lot more than just execute code. In fact, there are four distinct parts of the browser to consider:
-   1 JavaScript runtime engine
-   2 web APIs provided by the browser like the DOM, setTimeout, etc.
-   3 a callback queue for events with callbacks like onClick and onLoad
-   4 an event loop
    
+       1 JavaScript runtime engine
+       2 web APIs provided by the browser like the DOM, setTimeout, etc.
+       3 a callback queue for events with callbacks like onClick and onLoad
+       4 an event loop
+   
+ The runtime engine is what executes our code and each major browser has a slightly different engine under the hood. For example Chrome uses the V8 engine which also happens to power NodeJs. This engine can only execute one piece of code at a time.Web APIs are provided to us by the browser and include methods like setTimeout().These APIs are run independently, in a separate process, by the browser. This is how asynchronous JavaScript happens!!! It’s not that JavaScript itself is doing multiple things at once; instead the browser can run multiple different processes for us. runtime engine and the Web API interact using callback queue event loop.
+ 
+ The setTimeout function can access the value of i because of closure. We ask for i within our console.log statement, but its value is set in an outer, enclosing scope, that of the for loop. Since inner functions have access to variables in an outer function, we are able to go up a level and retrieve the value of i, which is 5.
+ 
+ 
+ 
+ 
+ 
  
  
  we need to use let i=0,because var is global but let is block scope.
