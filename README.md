@@ -190,8 +190,41 @@ for understanding two topic need clear concept in
      3.schema+java
      
 lets learn this topic (: (: 
-   
-    
+
+### higher order function
+that can take a function as a argument or a function that returns another function
+
+
+### closures
+
+two benifits
+1.memory efficient
+2.encapsulation 
+
+    const array=[1,2,3,4]
+
+     for(var i=0; i<array.length; i++){
+
+       setTimeout(() => {
+          console.log(i);
+       }, 300);
+     }
+ result will be->4
+ 
+ we need to use let i=0,because var is global but let is block scope.
+ 
+ or---
+          
+    const array=[1,2,3,4]
+     for(var i=0; i<array.length; i++){
+
+       (function(i){
+          setTimeout(() => {
+             console.log(i);
+          }, 300);
+       })(i)
+
+     }
     
 
 
