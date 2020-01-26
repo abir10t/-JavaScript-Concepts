@@ -340,3 +340,49 @@ we are able to use this prototype to add fuctionality.we also able to use constu
 
    thats the way.this is not oop .this is waht we call syntactic sugar underneath the hood in javascript we are still using prototype all inheritance.we are not using classes like classes work in other language.this is the closest that js is going to get to classes. undrneath the hood they are still using the new keyword with the prototype.in js classes are object,so if somone questio->does js have classes ->well ,yes ,they do as syntactic sugar but class keyword is still just prototype all inheritance.some people call this pseudo classical inheritance because its not classical inheritance..
 why we put attack() outside? every time we use the new keyword and create or instantiate a class the constuctor function gets run because each elf has a unique name and perhaps a unique weapon,but attack is shared by all instances of the class if we moved attack to the constuctor thats going to take up memory space.js, is weird :p :p 
+
+# this->
+    1 new binding
+    unction Person(name,age){
+    this.name=name;
+    this.age=age;
+    }
+    const person1=new Person("a","b")
+    
+    2.implicit binding
+    const person={
+    name:'karim',
+    hi(){
+    console.log('hi'+this.name)
+     }
+    }
+    
+    3.explicit binding
+    const person3={
+       name:'karen',
+       age:40,
+       hi:function(){
+          console.log('hi'+this.setTimeout)
+       }.bind(window)
+    }
+in hi funcation there is a set timeout.if we want to refer to the window object we can explicitly tell it what to bind to .and we say bind to window.
+    
+    4. arrow funcation
+            const person4={
+       name:'karen',
+       age:40,
+       hi:function(){
+          var inner=()=>{
+             console.log('hi'+this.name)
+          }
+        return inner()
+       }
+    }
+    console.log(person4.hi())
+   
+ here inside of hi function has a another function.a method with a function inside of it is the biggest gotacha when it comes to this.well if we run inner here and we run it everything is working because we are using arrow function if
+ we didn't used a regular function well in that case this would be the window object .which we usually never want.
+
+        
+      
+
