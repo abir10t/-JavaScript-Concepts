@@ -286,5 +286,22 @@ result->0 1 2 3
 
     console.log(peter.attack());
 
+### constucors function
 
 
+    unction Elf(name,weapon){
+       this.name=name;
+       this.weapon=weapon
+    }
+
+    Elf.prototype.attack=function(){
+
+
+       return 'attack with'+this.weapon;
+    }
+    const peter=new Elf('sam','fire');
+    const sam=nwe Elf("x","y")
+    console.log(peter.attack());
+
+
+we are able to use this prototype to add fuctionality.we also able to use constuctor functions insted of something like object.create , to create a new object,return a new object  and also modifies what this means to whatever object call us so insted of the global object this is now point to the calling object peter and sam.But this a constuctor function we also have a prototype property that we can attach things to so that when peter dot attack gets called well peter dosen't have attack as it's own method but its going to go up the prototype chain .this prototype is going to have the attack and now both peter and sam are able to use attack from the same location in memory insted of us copying attack multiple places in multiple locations in memory.we just have it written once in memory and both of these else are going to point attack which is in the same memory space. 
