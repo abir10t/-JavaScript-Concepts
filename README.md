@@ -324,15 +324,14 @@ we are able to use this prototype to add fuctionality.we also able to use constu
    
    this constuctor way is not pretty.now we improve this......!!!
      
-            class Elf{
-    constructor(name,weapon){
+    class Elf{
+       constructor(name,weapon){
        this.name=name;
-       this.weapon=weapon
-    }
-    attack=function(){
+       this.weapon=weapon                    //use this way ******
+       }
+    attack(){
        return 'attack with'+this.weapon;
-     }
-    
+       }
     }
 
     const peter=new Elf('sam','fire');
