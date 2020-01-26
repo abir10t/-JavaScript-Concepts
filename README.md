@@ -289,7 +289,7 @@ result->0 1 2 3
 ### constucors function
 
 
-    unction Elf(name,weapon){
+    function Elf(name,weapon){
        this.name=name;
        this.weapon=weapon
     }
