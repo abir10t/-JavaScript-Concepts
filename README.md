@@ -305,3 +305,39 @@ result->0 1 2 3
 
 
 we are able to use this prototype to add fuctionality.we also able to use constuctor functions insted of something like object.create , to create a new object,return a new object  and also modifies what this means to whatever object call us so insted of the global object this is now point to the calling object peter and sam.But this a constuctor function we also have a prototype property that we can attach things to so that when peter dot attack gets called well peter dosen't have attack as it's own method but its going to go up the prototype chain .this prototype is going to have the attack and now both peter and sam are able to use attack from the same location in memory insted of us copying attack multiple places in multiple locations in memory.we just have it written once in memory and both of these else are going to point attack which is in the same memory space. 
+
+    Elf.prototype.build=function()
+    {
+    const self=this
+    function building(){
+        return self.name
+     }
+     return building();
+    }
+  function inside of a function ,that means this is not assigned to the object itself but actually to the window object. so solution is  const self=this.
+  
+    function Elf(name,weapon){
+       this.name=name;
+       this.weapon=weapon
+    }
+   if we want to declear a variable we need to use this keyword .
+   
+   this constuctor way is not pretty.now we improve this......!!!
+     
+            class Elf{
+    constructor(name,weapon){
+       this.name=name;
+       this.weapon=weapon
+    }
+    attack=function(){
+       return 'attack with'+this.weapon;
+     }
+    
+    }
+
+    const peter=new Elf('sam','fire');
+
+    console.log(peter.attack());
+
+   thats the way.this is not oop .this is waht we call syntactic sugar underneath the hood in javascript we are still using prototype all inheritance.we are not using classes like classes work in other language.this is the closest that js is going to get to classes undrneath the hood they are still using the new keyword with the prototype.in js classes are object,so if somone questio->does js have classes ->well ,yes they do as syntactic sugar but class keyword is still just prototype all inheritance.some people call this pseudo classical inheritance because its not classical inheritance..
+why we put attack() outside? ever time we use the new keyword and create or instantiate a class the constuctor function gets run because each elf has a unique name and perhaps a unique weapon,butt attack is sharwd by all instances of the class if we moved attack to the constuctor thats going to take up memory space.js, is weird :p :p 
