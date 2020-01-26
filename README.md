@@ -258,3 +258,33 @@ result->0 1 2 3
 
 
 
+
+
+### oop
+
+###  prototypal inheritance
+
+    const elfFunction={
+
+    attack(){
+
+    return 'attack with'+this.weapon;
+    }
+    }
+
+
+    function createElf(name,weapon){
+    let newElf = Object.create(elfFunction)
+
+      newElf.name=name,
+      newElf.weapon=weapon;
+      return newElf;
+      
+  
+    }
+    const peter=createElf("peter","x")
+
+    console.log(peter.attack());
+
+
+
