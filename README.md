@@ -455,3 +455,4 @@ pure function is the pilar of functional programming.main two things is -> a fun
     console.log(array) //1,2,3
     
   this function has no site effect and if we give same input we will find same output ..so it's pure function
+  ..... in the end we tell that,we can't make a side effect code.
