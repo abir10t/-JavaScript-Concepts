@@ -384,5 +384,34 @@ in hi funcation there is a set timeout.if we want to refer to the window object 
  we didn't used a regular function well in that case this would be the window object .which we usually never want.
 
         
-      
+ ### inheritance
+     class Character{
+       constructor(name,weapon){
+       this.name=name;
+       this.weapon=weapon                   
+       }
+    attack(){
+       return 'attack with'+this.weapon;
+       }
+    }
 
+
+    class Ogre extends Character{
+
+       constructor(name,weapon,color)
+       {
+          super(name,weapon)
+          this.color=color;
+       }
+       makeFort()
+       {
+          return 'strong fronrt';
+       }
+    } 
+    const dolby=new Ogre('x','y','z');
+
+    ....... pillars of oop ..........
+            1.encapsulation
+               2.abstraction
+                   3.inheritance
+                       4.polymorphism
