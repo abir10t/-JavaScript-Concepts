@@ -415,3 +415,43 @@ in hi funcation there is a set timeout.if we want to refer to the window object 
                2.abstraction
                    3.inheritance
                        4.polymorphism
+                       
+ ### functional programming
+    1.curry
+    2.partial Application
+    3.pure Functions
+    4.Referential Transparency
+    4.compose
+    5.pip
+    
+ ### pure function
+ 
+pure function is the pilar of functional programming.main two things is -> a function has to always return the same output given the same input,and the function can't modify anything outside of itself(no side effect).
+....side effect...
+
+    onst array=[1,2,3]
+    function mutateArray(arr)
+    {
+    arr.pop()
+    }
+    a(array);      ///1,2
+    
+ mutateArray(arr) this function has side effects.the function modify anything outside of itself.and it does,modify array[1,2,3]that lives outside pof itself in the global object and this is called a side effect.
+ 
+    
+    const array=[1,2,3]
+    function x(arr)
+    {
+     const newArray=[].concat(arr);
+     newArray.pop();
+     return newArray
+    }
+    function multiplyby2(arr){
+       return arr.map(item=>item*2)
+    }
+    console.log(x(array));  //1,2
+    console.log(array)     //1,2,3
+    console.log(multiplyby2(array)) //2,4,6
+    console.log(array) //1,2,3
+    
+  this function has no site effect and if we give same input we will find same output ..so it's pure function
