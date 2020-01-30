@@ -456,3 +456,28 @@ pure function is the pilar of functional programming.main two things is -> a fun
     
   this function has no site effect and if we give same input we will find same output ..so it's pure function
   ..... in the end we tell that,we can't make a side effect code.
+  
+  
+  ### idempotent
+  
+    
+    function notGood(){
+
+
+    return Math.random();
+    }
+    console.log(notGood());
+  
+we will get a random number between 0 and 1,and what independence means is that given the same inputs we will find different outputs.
+
+### imperative vs Declarative 
+
+### Immutability 
+    const obj={name: 'Andrei'}
+    function clone(obj){
+    return {...obj};
+
+    }
+    console.log(obj.name='Nana')
+    
+   immutability means not changing the data not changing the state.In functional programming the idea of immutability is very important.we can change things inside of our function but we don't want to affects the outside world in our programs.
