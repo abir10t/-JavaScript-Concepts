@@ -481,3 +481,49 @@ we will get a random number between 0 and 1,and what independence means is that 
     console.log(obj.name='Nana')
     
    immutability means not changing the data not changing the state.In functional programming the idea of immutability is very important.we can change things inside of our function but we don't want to affects the outside world in our programs.
+   
+   
+   ### currying 
+   
+    const multiply=( a ,b)=>a*b;
+    const curriedMultiply=(a)=>(b)=>a*b;
+    const curriedMultiplyBy5=curriedMultiply(5);
+    console.log(curriedMultiplyBy5(4))
+    
+  result->20;
+  insted of running curriedMultiply over and over.we run it one .if we call  console.log(curriedMultiplyBy5(4)), console.log(curriedMultiplyBy5(5)) ;curriedMultiply runs once.
+  
+ ### partial application
+    const multiply=( a ,b,c)=>a*b*c;
+    const partialMultiplyby5=multiply.bind(null,5)
+    console.log(partialMultiplyby5(4,10))
+  
+  
+  in partial application ,in 2nd call it's to all arguments at a time.currying says i want one argument at a time.
+  
+### MCI Memoization
+    function addTo80(n){
+    console.long('long time')
+    return n+80;
+
+    }
+    addTo80(5);
+    addTo80(5);
+    addTo80(5);
+3 times addTO80 are calling.is there any wat to optimize it.
+
+### MCI Memorization
+    let cache={};
+    function memorizedAddto80(n){
+
+    if(n in cache){
+      return cache[n];
+     }
+     else{
+        console.log("long time");
+      cache[n]=5+80;
+      return cache[n];
+     }
+    }
+    
+   so memorization is simply a way to remember a solution to a cell problem.so you don't have to calculate it again.
