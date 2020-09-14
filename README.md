@@ -45,5 +45,8 @@
       var userName="max" -> here username is undifined for hoistiing.in browser first "var username=undifined" makes. but let and const doesn't do that.
       
       
-   
+  ### Garbage collection & memory management :
+        let person = {name:"max"} -> avobe statement is not necessary. So js engine garbage collector kick it out
+        person = null; 
+        
    
