@@ -49,4 +49,4 @@
         let person = {name:"max"} -> avobe statement is not necessary. So js engine garbage collector kick it out
         person = null; 
         
-   
+ ### need to give name of a anonymous function for finding error with line number and that anonymous function name. 
