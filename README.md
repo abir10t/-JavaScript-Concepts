@@ -49,7 +49,7 @@
         let person = {name:"max"} -> avobe statement is not necessary. So js engine garbage collector kick it out
         person = null; 
         
- ### need to give name of a anonymous function for finding error with line number and that anonymous function name. 
+ ### best practrice to give a annonyomus function name. because in erron option we can find annonyomus function name & linwe number.
  
  
  ### arrow function :
