@@ -50,3 +50,26 @@
         person = null; 
         
  ### need to give name of a anonymous function for finding error with line number and that anonymous function name. 
+ 
+ 
+ ### arrow function :
+    1. no arguments / parameters..............() => {...}
+    2. Exactly 1 argument / parameters.................arg => {...}
+    3. Exactly one expression in function body .......(a,b) => a+b  //here return works auto
+    
+    
+    
+ ### Rest operator:
+ 
+    1. const sumUp = (...numbers) =>
+       {
+           let sum=0;
+           for(const num of numbers){   // for (const num of arguments) here arguments is keyeord, we need to use " const x=function(){}, in argument we can't use arrow function.
+                    sum +=num;
+           
+           }
+           return sum;
+       }
+       
+        console.log(sumUp(1,5,10,-3,-6,10) // we dont pass array because of rest operator. for 1,5 -> const sumUp = (a,b, ...numbers) =>
+   
