@@ -72,4 +72,28 @@
        }
        
         console.log(sumUp(1,5,10,-3,-6,10) // we dont pass array because of rest operator. for 1,5 -> const sumUp = (a,b, ...numbers) =>
+        
+        
+### callback function:
+
+    const sum = (result, ...numbers) => {
+       let sum = 0;
+
+       const ch = (num) => {
+          return isNaN(num) ? 0 : num
+
+       };
+       for (const num of numbers) {
+
+          sum = sum + ch(num);
+       }
+
+       result(sum); // we transfer sum in the show funstion.
+    };
+
+    const show = (result) => {
+       alert("the result after adding the" + result);
+    };
+
+    console.log(sum(show, 2, 3, 4)) // show is a parameter of sum function
    
