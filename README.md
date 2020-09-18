@@ -96,4 +96,15 @@
     };
 
     console.log(sum(show, 2, 3, 4)) // show is a parameter of sum function
+    
+    
+ 
+ 
+### Exploring and Changing DOM Properties :
+    <p id="welcome-text" class="text-default">welcome</p>
+    const p = document.getElementById('welcome-text');
+    p.textContent -> welcome
+    p.id -> welcome-text
+    p.className ->"text-default"
+
    
