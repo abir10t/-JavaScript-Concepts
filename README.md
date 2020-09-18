@@ -104,7 +104,7 @@
 
     
      1. <p id="welcome-text" class="text-default">welcome</p>
-        const p = document.getElementById('welcome-text'); // for select a tag -> document.querySelector('h1')
+        const p = document.getElementById('welcome-text'); // for select a tag -> document.querySelector('h1')// query selector always work with the first elemnt.query selector -> css tag selector name 
         p.textContent -> welcome
         p.id -> welcome-text
         p.className ->"text-default" // the name that is occure in  css file 
