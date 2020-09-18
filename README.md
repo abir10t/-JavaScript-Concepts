@@ -101,10 +101,17 @@
  
  
 ### Exploring and Changing DOM Properties :
-    <p id="welcome-text" class="text-default">welcome</p>
-    const p = document.getElementById('welcome-text');
-    p.textContent -> welcome
-    p.id -> welcome-text
-    p.className ->"text-default"
 
+    
+     1. <p id="welcome-text" class="text-default">welcome</p>
+        const p = document.getElementById('welcome-text'); // for select a tag -> document.querySelector('h1')
+        p.textContent -> welcome
+        p.id -> welcome-text
+        p.className ->"text-default" // the name that is occure in  css file 
+     
+     
+     2. work with css:
+       h1.style.color="white"
+       
+     3. search google -> mdn h1 element 
    
