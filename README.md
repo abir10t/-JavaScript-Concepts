@@ -136,3 +136,14 @@
         
       4. for selecting body
          const body = document.body
+         
+         
+  ### Traversing child node:
+     const ul = document.querySelector('ul')
+     ul.children[1] -> 1 list item
+     ul.childnodes => all item include text
+     ul.firstElementChild ->for first child
+     ul.lastElementChild -> for last child
+     
+     
+  
