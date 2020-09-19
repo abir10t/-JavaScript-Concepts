@@ -115,3 +115,24 @@
        
      3. search google -> mdn h1 element 
    
+
+
+### Selecting multiple elements:
+
+   
+    1. const listItemElements = document.querySelectorAll('li') // const listItemElements = document.getElementsByTagName('li')
+    
+    difference -> getElementsByTagName = this gives a live list which reflects changes to the selected elements, querySelectorAll does not.
+    
+    for(const listitem of listItemElements)
+       console.dir(listitem);
+       
+       
+    2. const h1 = document.getElementById('main-title')
+       h1.style.backgroundColor = 'black';
+       
+     3. last list item:
+        const li = document.querySelector('li:last=of-type')   // last li item.
+        
+      4. for selecting body
+         const body = document.body
