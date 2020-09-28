@@ -148,5 +148,19 @@
    
    
   ### arrays and iterables
-    Slice :
+    ### concat : const x=[1,2]
+             y=x.concat([2.9,1.2])
+             x.push(20)
+             y-> 1,2,2.9,1.2
+             
+             
+    ###indexof 
+               const x=[1,2,3,4]
+               console.log(x.indexOf(1))
+               
+               but index of don't work in object,
+               connst person =[{name: 'max'}, {name:'y'}]
+               console.log(person.insexof({name:'y'})); -> -1
+               
+               
       
