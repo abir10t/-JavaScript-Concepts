@@ -64,7 +64,7 @@
     1. const sumUp = (...numbers) =>
        {
            let sum=0;
-           for(const num of numbers){   // for (const num of arguments) here arguments is keyeord, we need to use " const x=function(){}, in argument we can't use arrow function.
+           for(const num of numbers){   
                     sum +=num;
            
            }
@@ -145,5 +145,8 @@
      ul.firstElementChild ->for first child
      ul.lastElementChild -> for last child
      
-     
-  
+   
+   
+  ### arrays and iterables
+    Slice :
+      
