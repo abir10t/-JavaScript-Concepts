@@ -163,4 +163,38 @@
                console.log(person.insexof({name:'y'})); -> -1
                
                
+     ### push, pop, unshift, shift
+     
+            const hobbies = ['s','x']
+            hobbies.unshift('z')
+            console.log(hobbies)  ["z", "s", "x"]
+            hobbies.shift(); "z"
+            unshift and shift is slower than push and pop. because it works with the last item.
+            
+            
+       ### The Splice Method():
+         This method only available in the real array.
+  
+        add -> hobbies.splice(0,0,1) -> 1,z,s,x
+       remove -> hobbies.splice(0,1) -> x,s,x
+       last element -> hobbies.splice(-1,1) -> x,s
+       
+       
+      ### index of method:
+        const x=[1,2,3,4,5,6,7,8,9]
+        console.log(x.indexOf(7))
+
+         
+         
+            
+           
+            
+            
+       
+            
+            
+          
+             
+               
+               
       
