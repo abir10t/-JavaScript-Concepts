@@ -184,9 +184,15 @@
         const x=[1,2,3,4,5,6,7,8,9]
         console.log(x.indexOf(7))
         
+        
         but,
          let y=[{name:'a'}, {name:'b'}]
          y.indexOf({name:'a'}) -> here we get -1. reson is for reference value thing. object are reference values.therefore here we create a brand new object. so that's why -1
+         
+         
+        solution :
+          find takes argument. but the argument it takes is actually another function. it takes three argument. 1.take the specific obj, 2.index of the singel element, 3.full array.
+        
          
          
             
