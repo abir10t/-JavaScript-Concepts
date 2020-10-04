@@ -195,7 +195,16 @@
         
          
          
-            
+  ### Transforming Data With map :
+
+     const prices =[10,20,30]
+     const txt = prices.map((price, idx, prices)=>{
+
+     const priceobj = { index: idx, as:price*(1+0.19)}
+       return priceobj
+
+
+    })
            
             
             
