@@ -205,6 +205,7 @@
 
 
     })
+    console.log(priceobj)
            
             
             
