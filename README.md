@@ -207,7 +207,25 @@
 
     })
     console.log(txt)
-           
+    
+    
+  ### for each() :
+    const arr=[1,2,3,4,5]
+    let sum =0 
+    arr.forEach((price)=>{
+
+    sum = sum+price
+
+
+    })    
+    
+    
+ ### The important Reduce Method :
+    const arr=[1,2,3,4,5]
+    const y= arr.reduce((prevalue, curvalue,curindex, arr )=>{
+    return prevalue+curvalue
+
+    },0)
             
             
        
